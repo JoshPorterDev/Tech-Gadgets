@@ -15,6 +15,7 @@ public class MainActivity extends AppCompatActivity {
     private ListView listView;
     private TextView textView;
     String[] technologyList;
+    String value;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,8 +33,8 @@ public class MainActivity extends AppCompatActivity {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                String value = (String)(listView.getItemAtPosition(position));
                 Intent intent = new Intent(MainActivity.this, itemViewActivity.class);
+                value = (String) parent.getItemAtPosition(position);
                 intent.putExtra("value", value);
                 startActivity(intent);
             }

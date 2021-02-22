@@ -5,8 +5,8 @@
     <string-array name="technologyArray">
         <item>Playstation 5</item>
         <item>Raspberry PI</item>
-        <item>tv</item>
-        <item>laptop</item>
-        <item>phone</item>
+        <item>TV</item>
+        <item>Laptop</item>
+        <item>Phone</item>
     </string-array>
 </resources>
